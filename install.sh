@@ -17,9 +17,9 @@ apt-get clean
 
 # fetch, unpack, configure and install squid 3.5.27
 echo "" && echo "Building Squid..."
-wget http://www.squid-cache.org/Versions/v3/3.5/squid-3.5.27.tar.gz
-tar xzvf squid-3.5.27.tar.gz
-cd squid-3.5.27
+wget http://www.squid-cache.org/Versions/v5/squid-5.0.4.tar.gz
+tar xzvf squid-5.0.4.tar.gz
+cd squid-5.0.4
 ./configure --prefix=$SQUID_DIR --enable-ssl --with-openssl --enable-ssl-crtd --with-large-files --enable-auth --enable-icap-client
 make
 make install
